@@ -1,20 +1,20 @@
 <!doctype html>
 
 <head>
-<title>Gotta catch 'em all</title>
+<title>Welcome to Summoner's Rift</title>
 
 <script src="bower_components/platform/platform.js"></script>
 <script src="bower_components/polymer/polymer.js"></script>
 
-<link rel="import" href="x-pokemon.html">
+<link rel="import" href="league-champion.html">
 </head>
 
 <body>
     <p>
         <input
-            value="pikachu"
-            oninput="document.querySelector('x-pokemon').name = this.value">
+            value="Nidalee"
+            oninput="document.querySelector('league-champion').name = this.value[0].toUpperCase() + this.value.slice(1)">
     </p>
 
-    <x-pokemon name="pikachu"></x-pokemon>
+    <league-champion name="Nidalee"></league-champion>
 </body>
